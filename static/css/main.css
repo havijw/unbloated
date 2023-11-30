@@ -5,6 +5,7 @@
 @import "footer.css";
 
 html {
+  color-scheme: light dark;
   background: #e4e4e4;
   font-family: 'Source Code Pro', monospace;
   font-size: 95%;
@@ -15,4 +16,24 @@ body {
   margin: auto;
   background: white;
   box-shadow: 0 0 5px 5px #bbb;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background: #444;
+    color: whitesmoke;
+  }
+
+  body {
+    background: #222;
+    box-shadow: 0 0 5px 5px #333;
+  }
+
+  a {
+    color: lightskyblue;
+  }
+  
+  a:visited {
+    color: plum;
+  }
 }
