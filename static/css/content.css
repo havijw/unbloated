@@ -87,4 +87,8 @@ span.katex-display {
     border: 1px solid #555;
     color: #f05656;
   }
+
+  main table, th, td{
+    border-color: whitesmoke;
+  }
 }
