@@ -44,7 +44,7 @@ main table, th, td{
   margin: auto;
   border: 1px solid black;
   border-collapse: collapse;
-  padding: 2px;
+  padding: 10px;
 }
 
 main a.footnote-ref::before {
@@ -69,4 +69,22 @@ span.katex {
 
 span.katex-display {
     font-size: 95%;
+}
+
+@media (prefers-color-scheme: dark) {
+  main pre {
+    border: 1px solid #333;
+    box-shadow: 5px 5px 5px #111;
+  }
+
+  main blockquote {
+    background: #333;
+    border-left: 5px solid #666;
+  }
+
+  main p code {
+    background-color: #444;
+    border: 1px solid #555;
+    color: #f05656;
+  }
 }
