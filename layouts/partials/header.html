@@ -5,6 +5,12 @@
     <meta charset="utf-8">
     <title>{{ .Title }} | {{ .Site.Title }}</title>
     <link rel="stylesheet" href="{{ "/css/main.css" | relURL }}" />
+    {{ if .Param "math" }}
+      {{ partial "math.html" . }}
+    {{ end }}
+    {{ if .Param "tikz" }}
+      {{ partial "tikz.html" . }}
+    {{ end }}
     {{ partial "head_custom.html" . }}
   </head>
 
